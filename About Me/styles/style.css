@@ -1,0 +1,174 @@
+body {
+    background-image: url("../images/Win98-2.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: Windows;
+    font-size: 115%;
+    height: 100vh;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+
+.window{
+    position: absolute;
+    border: rgb(156, 156, 156) solid 3px;
+    max-width: 70%;
+    overflow-y: auto;
+    width: 70%;
+    height: calc(100vh - 6px);
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    position: relative;
+    background-image: linear-gradient(#ffcfea, #afe9ff);
+    padding: 0.1px 30px 30px 30px;
+}
+
+
+@font-face {
+    font-family: "Windows";
+    src: url("Windows Regular.ttf");
+    
+}
+
+h1{
+    position: sticky;
+    top: 5px;
+    text-align: center;
+    margin: 30px;
+    background-image: url("../images/window.webp");
+    background-size: 35% 150%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#pfp{
+    float: right;
+    width: 45%;
+    cursor: pointer;
+    border: rgb(156, 156, 156) solid 2px;
+    transition: 0.3s;
+}
+
+#pfp:hover{
+    opacity: 0.72;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 300%; /* Full height */
+    overflow:auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+.verse{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    /*I wasn't sure whether the instructions wanted me to use border-spacing 
+    or word-spacing for the cell spacing, so I went with word-spacing */
+    word-spacing: 3px;
+    padding: 3px;
+    text-align: center;
+    table-layout: fixed;
+    width: 75%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgb(156, 156, 156) rgb(156, 156, 156) rgb(0, 0, 0);
+}
+
+.table{
+    overflow: auto;
+}
+
+td:hover{
+    background-color: #f2e5ff;
+}
+
+th:hover{
+    background-color: #f2e5ff;
+}
