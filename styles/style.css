@@ -55,7 +55,7 @@ h1{
 
 #pfp{
     float: right;
-    width: 45%;
+    width: 40%;
     cursor: pointer;
     border: rgb(156, 156, 156) solid 2px;
     transition: 0.3s;
