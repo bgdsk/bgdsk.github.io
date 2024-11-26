@@ -1,0 +1,105 @@
+/*
+UPDATES:
+1. A brand new theme, with the same grid areas but new code for everything else, mostly for the new color scheme, but also I added new code, like for the button element.
+*/
+
+body {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+    border-color: #353535; 
+
+    display: grid;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 0.3%;
+    grid-template-columns: 10vw 1fr 20vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "head head head"
+        "aside section section"
+        "foot foot foot";
+}
+
+img, video{
+    margin: 5px;
+    max-width: 45vw;
+}
+
+header{
+    grid-area: head;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+aside{
+    padding: 3%;
+    text-align: center;
+    max-height: fit-content;
+    border: 3px solid #353535; 
+    grid-area: aside;
+}
+
+article{
+    display: flexbox;
+    flex-wrap: wrap;
+    border: 3px solid #a67b17; 
+    text-align: center;
+    max-width: 90vw;
+}
+
+nav a{
+    display: flex;
+    text-decoration-color: #e6b830;
+    text-decoration: none;
+    margin: 3%;
+    color: #c5a032; 
+
+}
+
+nav a:hover{
+    text-decoration-color: #e0e0e0;
+    color: #e6b830;
+    text-decoration: underline;
+}
+
+details:hover{
+    text-decoration-color: #e0e0e0;
+    text-decoration: underline;
+}
+
+details summary {
+    color: #c5a032; 
+}
+
+figcaption, summary{
+    color: #e0e0e0
+}
+
+footer{
+    border: 3px solid #353535; 
+    text-align: center;
+    grid-area: foot;
+}
+
+section{
+    grid-area: section;
+}
+
+#about-me{
+    display: none;
+}
+
+#contact-info{
+    display: none;
+}
+
+main{
+    margin: 0.3%
+}
+
+button{
+    background-color: #353535; 
+    color: #e0e0e0;       
+    border-color: #505050;  
+}

@@ -1,0 +1,82 @@
+/*
+UPDATES:
+1. Removed all the hardcoded settings for heights, widths, etc.
+*/
+
+body {
+    background-image: linear-gradient(#afe8ff62, #ffcfea60);
+    display: grid;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 0.3%;
+    grid-template-columns: 10vw 1fr 20vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "head head head"
+        "aside section section"
+        "foot foot foot";
+}
+
+img, video{
+    margin: 5px;
+    max-width: 45vw;
+}
+
+header{
+    grid-area: head;
+    text-align: center;
+
+}
+
+aside{
+    padding: 3%;
+    text-align: center;
+    max-height: fit-content;
+    border: 3px solid #d3cfc5; 
+    grid-area: aside;
+}
+
+article{
+    display: flexbox;
+    flex-wrap: wrap;
+    border: 3px solid #ffcf40; 
+    text-align: center;
+    max-width: 90vw;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    margin: 3%;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+details:hover{
+    text-decoration: underline;
+}
+
+footer{
+    border: 3px solid #d3cfc5; 
+    text-align: center;
+    grid-area: foot;
+}
+
+section{
+    grid-area: section;
+}
+
+#about-me{
+    display: none;
+}
+
+#contact-info{
+    display: none;
+}
+
+main{
+    margin: 0.3%
+}

@@ -1,0 +1,141 @@
+<!-- DISCLAIMER
+ 
+Project:  Project 4 - Responsive Web Site - CSS Theme and Refactor
+Name: Bohdan Yurchneko
+Submitted: 11/25/2024
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):  
+I have added a new theme and made the website more responsive, so that even the mobile users could enjoy it. I also updated some of the code and removed some of the redundancy.
+.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Favorite Movies</title>
+        <link rel="icon" type="image/png" href="images/icon.jpg">
+        <link rel="stylesheet" id="theme" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script async src="css/script.js"></script>
+    </head>
+
+    <body>
+        <aside id="menu">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#contact-info">Contact Information</a>
+                <button id="themeButton" value="OFF">Dark/light theme</button>
+            </nav>
+        </aside>
+
+        <section id="home">
+            <article>
+                <header>
+                    <h1>My Favorite Movies <i class="fa-solid fa-film"></i></h1> 
+                    <img id="break" src="images/break.png">
+                </header>
+
+                <details>
+                    <summary>A few details about these movies.</summary>
+                    <p>"Stalker", "An Autumn Afternoon", and "The Mirror" are some of my most beloved movies. 
+                        Ozu's movie is about the passing of life of an individual, while Tarkovsky's movies are a bit more abstract, and might mean different things to different people.</p>
+                </details>
+                <main>
+                    <figure id="stalker">  
+                        <picture>
+                            <source media="(max-width:600px)" srcset="images/stalker-small.jpg">
+                            <source media="(max-width:800px)" srcset="images/stalker-smaller.jpg">
+                            <img src="images/stalker.jpg" alt="Stalker (1979)">
+                        </picture>
+                        <figcaption>Stalker (1979) - Andrei Tarkovsky</figcaption>
+                    </figure>
+
+                    <figure id="afternoon">
+                        <picture>
+                            <source media="(max-width:800px)" srcset="images/afternoon-logo.jpg">
+                            <img src="images/afternoon.webp" alt="An Autumn Afternoon (1962)">
+                        </picture>
+                        <figcaption>An Autumn Afternoon (1962) - Yasujirō Ozu</figcaption>
+                    </figure>
+
+                    <figure id="mirror">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="images/mirror-small.jpg">
+                            <source media="(max-width:800px)" srcset="images/mirror-smaller.jpg">
+                            <img src="images/mirror.jpg" alt="The Mirror (1975)">
+                        </picture>
+                        <figcaption>The Mirror (1975) - Andrei Tarkovsky</figcaption>
+                    </figure>
+
+                    <figure id="stalker-trailer">
+                        <video controls>
+                            <source src="images/stalker-trailer.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Stalker (1979) - Trailer</figcaption>
+                    </figure>
+                
+                </main>
+
+                <footer id="foot">
+                    <p>Bohdan Yurchenko, 2024.</p>
+                </footer>
+            </article>
+        </section>
+
+        
+        <section id="about-me">
+            <article>
+                <header>
+                    <h1>About Me <i class="fa-regular fa-address-card"></i></h1>
+                    <img img id="break" src="images/break.png">
+                </header>
+
+                <main>
+                    <p>I love learning. About everything. I want to see, I want to know, I want to understand as much as possible. Not about the mundane things, but things that affect our existence. Things that change the trajectory of our evolution and our place in this world. 
+                        For example, I want to understand the perspectives of merging the human brain and a computer, an ongoing process that will radically change us and reality as we understand it.
+                        <br><br>
+                        In order to learn more about it, I started studying Computer Science, along with Cognitive Neuroscience, and am planning on studying Computational Neuroscience at a graduate school. I am hoping to work on the research of brain-computer interfaces (BCIs), similar to Neurolink. 
+                        The promises of this technology are both rapturous and dystopian. Access to all human knowledge without using any devices and salvation from neurological disorders, but also a loss of neural data privacy and absolute surveillance. I believe that this technology is the future, and it will shape every aspect of our existence.
+                        <br><br>
+                        Besides that, I want to know history. I am not studying it as my major, but I spend as much time as possible researching why the world we live in is the way it is. It is impossible to fully comprehend the context that surrounds us without knowing the context that existed before us. And besides that, it is just fascinating. 
+                        I have read many books throughout my life, and not a single fantasy or sci-fi book can compare to the actual records of human history.
+                        <br><br>
+                        Hence, I want to see and understand as much as possible to understand where we are going as a collective. Laplace’s demon can predict the future of every particle in the universe just by knowing its location and trajectory, at least if the world is deterministic. 
+                        And if we know the position and trajectory of our society, we can predict its future, at least to a degree.</p>
+                
+                </main>
+
+                <footer id="foot">
+                    <p>Bohdan Yurchenko, 2024.</p>
+                </footer>
+            </article>
+        </section>
+
+
+        <section id="contact-info">
+            <article>
+                <header>
+                    <h1>Contact Information <i class="fa-regular fa-address-book"></i></h1>
+                    <img img id="break" src="images/break.png">
+                </header>
+
+                <main>
+                    <p>If you wish to contact me, feel free to reach me out using my UVU email, BohdanY@uvu.edu. I will reply to you as soon as I can. Thank you!</p>
+                </main>
+
+                <footer id="foot">
+                    <p>Bohdan Yurchenko, 2024.</p>
+                </footer>
+            </article>
+        </section>
+        
+    </body>
+</html>
